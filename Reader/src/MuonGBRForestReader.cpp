@@ -110,15 +110,15 @@ float MuonGBRForestReader::Get_MVA_value( float mu_pT, float mu_eta, float mu_N_
 
 
 //============================================================================================================================================================================
-float MuonGBRForestReader::Get_MVA_value_two_eta_bins( float mu_pT, float mu_eta, float glb_valid_mu_hits, float tk_valid_pixel_hits, float tk_valid_hits, float glb_chi2,
+float MuonGBRForestReader::Get_MVA_value_two_eta_bins( float mu_pT, float mu_eta, float glb_valid_mu_hits, float glb_chi2, float tk_valid_pixel_hits, float tk_valid_hits,
                                                        float mu_pf_photon_iso, float mu_pf_charged_had_iso, float mu_pf_neutral_had_iso, float mu_rho )
 {  
    vars_.clear();
 
 	vars_.push_back(glb_valid_mu_hits);
+   vars_.push_back(glb_chi2);
 	vars_.push_back(tk_valid_pixel_hits);
 	vars_.push_back(tk_valid_hits);
-	vars_.push_back(glb_chi2);
 	vars_.push_back(mu_pf_photon_iso);
 	vars_.push_back(mu_pf_charged_had_iso);
 	vars_.push_back(mu_pf_neutral_had_iso);
