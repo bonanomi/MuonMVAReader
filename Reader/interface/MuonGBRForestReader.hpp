@@ -7,7 +7,6 @@
 
 #include "FWCore/ParameterSet/interface/FileInPath.h"
 #include "CommonTools/MVAUtils/interface/GBRForestTools.h"
-#include "CondFormats/EgammaObjects/interface/GBRForest.h"
 
 using namespace std;
 using namespace edm;
