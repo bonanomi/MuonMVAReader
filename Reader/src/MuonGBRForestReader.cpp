@@ -24,8 +24,8 @@ MuonGBRForestReader::MuonGBRForestReader( int year )
       std::cerr << "[ERROR] MuonGBRForestReader: Year " << year << " is currently not supported!" << std::endl;
    }
    
-   gbrForests_.push_back(model_.createGBRForest(fip_pT_5_));
-   gbrForests_.push_back(model_.createGBRForest(fip_pT_10_));
+   gbrForests_.push_back(createGBRForest(fip_pT_5_));
+   gbrForests_.push_back(createGBRForest(fip_pT_10_));
       
 }
 //================================
@@ -61,10 +61,10 @@ MuonGBRForestReader::MuonGBRForestReader( int year, int num_of_eta_bins )
       std::cerr << "[ERROR] MuonGBRForestReader: Year " << year << " is currently not supported!" << std::endl;
    }
    
-   gbrForests_.push_back(model_.createGBRForest(fip_B_pT_5_));
-   gbrForests_.push_back(model_.createGBRForest(fip_B_pT_10_));
-   gbrForests_.push_back(model_.createGBRForest(fip_E_pT_5_));
-   gbrForests_.push_back(model_.createGBRForest(fip_E_pT_10_));
+   gbrForests_.push_back(createGBRForest(fip_B_pT_5_));
+   gbrForests_.push_back(createGBRForest(fip_B_pT_10_));
+   gbrForests_.push_back(createGBRForest(fip_E_pT_5_));
+   gbrForests_.push_back(createGBRForest(fip_E_pT_10_));
       
 }
 //================================

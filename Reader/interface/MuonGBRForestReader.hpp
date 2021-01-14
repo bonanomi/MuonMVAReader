@@ -6,7 +6,8 @@
 #include <iostream>
 
 #include "FWCore/ParameterSet/interface/FileInPath.h"
-#include "RecoEgamma/EgammaTools/interface/GBRForestTools.h"
+#include "CommonTools/MVAUtils/interface/GBRForestTools.h"
+#include "CondFormats/EgammaObjects/interface/GBRForest.h"
 
 using namespace std;
 using namespace edm;
@@ -30,7 +31,7 @@ class MuonGBRForestReader
       string weights_pT_5_, weights_pT_10_;
       string weights_B_pT_5_, weights_B_pT_10_, weights_E_pT_5_, weights_E_pT_10_;
             
-      GBRForestTools model_;
+      //GBRForest model_;
       
       vector<float> vars_;
       
